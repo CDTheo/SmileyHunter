@@ -19,16 +19,11 @@ a{
 
 #chart{
     display: block;
-    margin-left: auto;
-    width: 50%;
-    float: left;
-}
-#chart2{
-    display: block;
-    margin-right: auto;
-    float: right;
+    font-weight: bold;
+    margin: auto;
     width: 50%;
 }
+
 
 #textData1{
     display: inline-block;
@@ -105,6 +100,14 @@ a{
     display: inline-block;
     width:18%; 
     font-family: monospace;
+    margin-bottom: 1%;
     margin-left: 1%;
+    font-size: 20px;
     text-align: center;
+}
+
+#myChart{
+    display: inline-block;
+    width: 100%;
+    margin: auto;
 }

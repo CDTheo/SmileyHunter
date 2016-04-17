@@ -14,6 +14,8 @@ $(document).ready(function(){
     }else{
         //if the user has not only played for the first time then output the data correctly
         displayTextStats();
+        chartLoad();
+        
     }
 });
 
@@ -56,8 +58,61 @@ function displayTextStats(){
 }
 
 
-
-/*
- var $preScore = $('<p class = "scoreText">' + previousScore + '</p>');
-        $preScore.appendTo('#preScore');
-*/
+//setting up the chart 
+function chartLoad(){
+    //Get the number of game per month the user has played 
+    var ScoreArray = JSON.parse(localStorage.getItem("ScoreArray"));
+    //Each index of this array will represent each month. 0 - January, 1 - February.. So on.
+    var monthCountArray = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    //Below we will begin populating the monthCountArray
+    for (var n = 0; n < ScoreArray.length; n++){
+        monthCountArray[ScoreArray[n].month]++;
+    }
+    //Now all 0 to 11 elements should be filled with numbers inside. 
+    
+    
+    //Next we need to find the Average Score of each month. 
+    var avgScoreArray = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    //Populate the score array
+    for(var n = 0; n< ScoreArray.length; n++){
+            avgScoreArray[ScoreArray[n].month] = avgScoreArray[ScoreArray[n].month] + ScoreArray[n].score;
+    }
+    
+    //The avgScoreArray is now populated with the accumulated scores of each month. We need to divide each index with the number of games played to get the average for each month
+    for(var n = 0; n<avgScoreArray.length; n++){
+        if(avgScoreArray[n] > 0){
+            avgScoreArray[n] = Math.floor(avgScoreArray[n] / monthCountArray[n]);
+            avgScoreArray[n] = (avgScoreArray[n]/1000).toFixed(2);
+        }
+    }
+    
+    var ctx = document.getElementById("myChart").getContext("2d");
+    var data = {
+    labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+    datasets: [
+        {
+            label: "My First dataset",
+            fillColor: "rgba(220,220,220,0.2)",
+            strokeColor: "rgba(220,220,220,1)",
+            pointColor: "rgba(220,220,220,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(220,220,220,1)",
+            data: [monthCountArray[0],monthCountArray[1],monthCountArray[2],monthCountArray[3],monthCountArray[4],monthCountArray[5],monthCountArray[6],monthCountArray[7],monthCountArray[8],monthCountArray[9],monthCountArray[10],monthCountArray[11]]
+        },
+        {
+            label: "My Second dataset",
+            fillColor: "rgba(151,187,205,0.2)",
+            strokeColor: "rgba(151,187,205,1)",
+            pointColor: "rgba(151,187,205,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(151,187,205,1)",
+            data: [avgScoreArray[0], avgScoreArray[1], avgScoreArray[2], avgScoreArray[3], avgScoreArray[4], avgScoreArray[5], avgScoreArray[6], avgScoreArray[7], avgScoreArray[8], avgScoreArray[9], avgScoreArray[10], avgScoreArray[11]]
+        }
+    ]
+    };
+    var options = {};
+    var myLineChart = new Chart(ctx).Line(data,options);
+    
+}

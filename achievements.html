@@ -2,8 +2,10 @@
     <head>
         <title>Smiley Hunter</title>
         <link type = "text/css" rel = stylesheet href = "achievementsCss.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
         <script type="text/javascript" src="jquery-1.12.1.js"></script>
         <script type = "text/javascript" src = "achievementsJs.js"></script>
+        
     </head>
     <body> 
         <h1 id = "heading">Stats & Achievements</h1>
@@ -25,9 +27,11 @@
         <div id = "textData3">
             <h3 class = "subheading">Accuracy</h3>
         </div>
-        <h3 class = "subheading" id = "chart">Play frequency</h3>
-        <h3 class = "subheading" id = "chart2">Progression</h3>
-        <h3 class = "subheading">Achievements</h3>
+        <div class = "subheading" id = "chart">
+            <p>Play frequency & Average Score</p>
+            <canvas id = "myChart" width ="800" height ="400"></canvas>
+        </div>
+        <h3 class = "subheading"></h3>
         <div id = "buttonBox">
             <a href = "index.html">
                 <div class = "buttons">Home</div>
