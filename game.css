@@ -1,0 +1,60 @@
+body{
+    background-color: #D8F045;
+}
+#scoreDisplay{
+    display: inline-block;
+    margin-left: 35%;
+    font-size: 2em;
+    font-family: monospace;
+    width: 25%;
+}
+#timeDisplay{
+    display:inline-block;
+    font-size: 2em;
+    font-family: monospace;
+    width: 200px;
+}
+#buttonBox{
+    margin-top: 20px;
+    
+}
+
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.button{
+    display: block;
+    margin: auto;
+    font-size: 2em;
+    font-family: monospace;
+    width: 100px;
+    text-align: center;
+    border-width: 5px;
+    border-style: solid; 
+    border-color: #65FFE7;
+    background-color: orange;
+    border-radius: 50px;
+}
+#roundText{
+    text-align: center;
+    font-family: monospace;
+}
+
+#imageScreen{
+    display:block; 
+    margin: auto;
+    height: 760px; 
+    width: 500px;
+}
+img{
+    height: 200px;
+    vertical-align: bottom;
+}
+.imagefour{
+    height: 376px;
+}
+.imagesixteen{
+    height: 25%;
+}

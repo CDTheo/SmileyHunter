@@ -1,0 +1,62 @@
+body{
+    background-color: #D8F045
+}
+
+h1{ 
+   text-align: center;
+    font-family: monospace;
+    font-size: 50px;
+}
+
+h3{
+   text-align: center;
+    font-family: monospace;
+    font-size: 20px; 
+}
+#ScoreC{
+    text-align: center;
+    display: inline-block;
+   width: 40%
+   height: auto; 
+    margin-left: 45em;
+}
+#DateC{
+    display: inline-block;
+    text-align: center;
+    font-family: monospace;
+    margin-left: 20em;
+   height: auto; 
+}
+
+#preScore{
+    display:block;
+    text-align: center;
+}
+
+.scoreText{
+    text-align: center;
+    font-family: monospace;
+    font-size: 200%;
+}
+
+#buttonBox{
+    display:block;
+    width: 500px;
+    margin: auto;
+}
+
+.buttons{
+    display: inline-block;
+    margin: auto;
+    margin-left: 15px;
+    width:  205px;
+    height: 40px;
+    font-size: 30px;
+    font-family: monospace;
+    text-align: center;
+    border-width: 5px;
+    border-style: solid; 
+    border-color: #65FFE7;
+    background-color: orange;
+    border-radius: 50px;
+}
