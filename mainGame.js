@@ -84,11 +84,11 @@ var generate16 = function(){
     if(n == happyPos){
             happyFaceNo = Math.floor(Math.random()*52+1); 
         //after getting the number we will get the and append the happy face 
-            var $happyImage = $('<img class = "imagesixteen" id = "target" src = "/Happy_direct/' + happyFaceNo + '.jpg"/>');
+            var $happyImage = $('<img class = "imagesixteen" id = "target" src = "file:///Happy_direct/' + happyFaceNo + '.jpg"/>');
             $happyImage.appendTo('#imageScreen');
         }else{
             var randomNo = Math.floor(Math.random()*55 + 1);
-            var $unhappyImage = $('<img class = "imagesixteen" id = "nonTarget" src = "/Afraid_averted/' + randomNo +'.jpg"/>');
+            var $unhappyImage = $('<img class = "imagesixteen" id = "nonTarget" src = "file:///Afraid_averted/' + randomNo +'.jpg"/>');
             $unhappyImage.appendTo('#imageScreen');
         }
     }
