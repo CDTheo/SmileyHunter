@@ -18,6 +18,7 @@ $(document).ready(function(){
 });
 
 
+
 function displayTextStats(){
     //first statistic to output is the all time average Score
     var totalScore = 0;
@@ -30,8 +31,7 @@ function displayTextStats(){
     var averageScore = totalScore / totalGames; 
     var $avgScore = $('<p class = "statText">' + averageScore + '</p>');
     $avgScore.appendTo('#textData1');
-    
-    var $test;
+
     //next we will use the compiled information to find the total game time
     var gameTimeSec = ((totalGames * 10000) - totalScore)/10;
     //then we convert to minutes
@@ -47,7 +47,12 @@ function displayTextStats(){
     var accuracy = 100 - (totalMisses / (totalGames*50));
     //now we display the accuracy
     var $accuracy = $('<p class = "statText">' + accuracy + '%' +'</p>');
-    $accuracy.appendTo('#textData3')
+    $accuracy.appendTo('#textData3');
+    
+    var progression = ((averageScore/10000)*50 + (accuracy/100)*50)
+    //Before we end, we need to create the hunter-o-meter bar
+    var $innerMeter = $('<div id = "innerMeter" style = "width:'+ progression +'%;"></div>');
+    $innerMeter.appendTo('#outerMeter');
 }
 
 
