@@ -16,11 +16,11 @@ $(document).ready(function(){
     for(var n =0; n < 52; n++){
         if(clearedArray[n] == 1){
             //If this image has been found then generate and append it to the imageBox div 
-            var $happyImage = $('<img class = "image" src = "Happy_direct/' + (n+1) + '.jpg"/>');
+            var $happyImage = $('<img class = "image" src = "../assets/Happy_direct/' + (n+1) + '.jpg"/>');
             $happyImage.appendTo('#imageBox');
         }else{
             //overwise we just fill the space with a black box
-            var $blackBox = $('<img class = "image" src = "Happy_direct/' + 53 + '.jpg"/>');
+            var $blackBox = $('<img class = "image" src = "../assets/Happy_direct/' + 53 + '.jpg"/>');
             $blackBox.appendTo('#imageBox');
         }
     }
