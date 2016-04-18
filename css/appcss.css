@@ -12,16 +12,17 @@ a{
 }
 #header{
     display: block; 
-    margin-top: 10%;
+    margin-top: 1%;
     margin-left: auto;
 }
 #logo{
     display: block; 
     margin: auto;
     border-radius: 5%;
-    border-width: 7px;
+    border-width: 6px;
     border-style: solid;
     border-color: #F39512;
+    width: 20%;
 }
 
 .main{
