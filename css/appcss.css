@@ -1,10 +1,11 @@
 body{
-    background-color: #D8F045;
+    background-color: #D6F0B0;
 }
 a{
     color: inherit;
     text-decoration: inherit;
 }
+
 #heading{
     text-align: center;
     font-family: monospace;
@@ -54,3 +55,4 @@ a{
     background-color: orange;
     border-radius: 50px;
 }
+

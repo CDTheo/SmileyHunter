@@ -3,8 +3,9 @@
     <head> 
         <link type = "text/css" rel="stylesheet" href="css/appcss.css"/>
         <title>Smiley Hunter</title>
+        <script src="js/jscolor.js"></script>
     </head>
-    <body>
+    <body id = "body">
         <h1 id = "heading">Smiley Hunter</h1>
         <div id = "header"> <img id = "logo" src = "assets/SmileyHunter.png"/></div>
         <div>
@@ -21,5 +22,14 @@
             <a href = "data/highScore.html">
                 <div class = "buttons">High Score</div>
             </a>
+            <!--Personally background change-->
+            <p style = "font-family: monospace; margin-top: 40%">Pick your colour!</p>
+            <input class="jscolor {onFineChange:'update(this)'}" value="#D8F045">
+            <script>
+            function update(jscolor) {
+                    // 'jscolor' instance can be used as a string
+                    document.getElementById('body').style.backgroundColor = '#' + jscolor
+                }
+            </script>
     </body>
 </html>

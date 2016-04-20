@@ -55,6 +55,7 @@ $(document).ready(function(){
                     window.location.href = "highScore.html";
             }else if(event.target.id === "nonTarget"){
                 missCount++;
+                count = count - 100;
             }
     });
 });
