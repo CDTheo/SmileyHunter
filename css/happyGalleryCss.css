@@ -21,7 +21,7 @@ a{
 .buttons{
     display: block;
     margin: auto;
-    width:  50%;
+    width:  100%;
     font-size: 200%;
     font-family: monospace;
     text-align: center;
@@ -33,9 +33,9 @@ a{
 }
 
 #imageBox{
-    margin: auto;
+    margin-left: 8%;
     height: auto; 
-    width: 29%;
+    width: 90%;
 }
 
 .image{

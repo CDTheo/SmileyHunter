@@ -5,26 +5,26 @@ body{
 h1{ 
    text-align: center;
     font-family: monospace;
-    font-size: 50px;
+    font-size: 300%;
 }
 
 h3{
    text-align: center;
     font-family: monospace;
-    font-size: 20px; 
+    font-size: 200%; 
 }
 #ScoreC{
     text-align: center;
     display: inline-block;
    width: 40%
    height: auto; 
-    margin-left: 45em;
+    margin-left: 21%;
 }
 #DateC{
     display: inline-block;
     text-align: center;
     font-family: monospace;
-    margin-left: 20em;
+    margin-left: 20%;
    height: auto; 
 }
 
@@ -41,17 +41,16 @@ h3{
 
 #buttonBox{
     display:block;
-    width: 500px;
+    width: 90%;
     margin: auto;
 }
 
 .buttons{
     display: inline-block;
     margin: auto;
-    margin-left: 15px;
-    width:  205px;
-    height: 40px;
-    font-size: 30px;
+    margin-left: 5%;
+    width:  40%;
+    font-size: 200%;
     font-family: monospace;
     text-align: center;
     border-width: 5px;
