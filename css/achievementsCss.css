@@ -30,23 +30,25 @@ a{
     display: inline-block;
     margin: auto;
     float: left;
-    margin-left: 15;
+    margin-left: 10%;
     font-size: 45%;
-    width: 30%;
+    width: 20%;
 }
 #textData2{
     display: inline-block;
     margin: auto;
     float: none;
+    margin-left: 10%;
     font-size: 45%;
-    width: 35%;
+    width: 20%;
 }
 #textData3{
     display:inline-block;
     margin: auto; 
     float: none;
+    margin-left: 10%;
     font-size: 45%;
-    width: 30%;
+    width: 20%;
 }
 
 .statText{
@@ -129,7 +131,7 @@ a{
 
 .chartHeading{
     display: inline-block;
-    font-size: 50%;
+    font-size: 30%;
     float:left
 }
 #chartHpart1{
