@@ -31,18 +31,21 @@ a{
     margin: auto;
     float: left;
     margin-left: 15;
+    font-size: 45%;
     width: 30%;
 }
 #textData2{
     display: inline-block;
     margin: auto;
     float: none;
+    font-size: 45%;
     width: 35%;
 }
 #textData3{
     display:inline-block;
     margin: auto; 
     float: none;
+    font-size: 45%;
     width: 30%;
 }
 
@@ -126,7 +129,8 @@ a{
 
 .chartHeading{
     display: inline-block;
-    font-size: 90%;
+    font-size: 50%;
+    float:left
 }
 #chartHpart1{
     color: ff4500;
