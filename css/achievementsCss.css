@@ -126,12 +126,13 @@ a{
 
 .chartHeading{
     display: inline-block;
+    font-size: 90%;
 }
 #chartHpart1{
-    color: ff4500
+    color: ff4500;
 }
 #chartHpart2{
-    color:00baff;;
+    color:00baff;
 }
 
 #myChart{

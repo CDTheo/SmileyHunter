@@ -30,7 +30,7 @@ function displayTextStats(){
     }
     //now that we have the total score we need then devide by the number of games we have played
     var totalGames = JSON.parse(localStorage.getItem("totalGames"));
-    var averageScore = totalScore / totalGames; 
+    var averageScore = (totalScore / totalGames).toFixed(2); 
     var $avgScore = $('<p class = "statText">' + averageScore + '</p>');
     $avgScore.appendTo('#textData1');
 
@@ -46,12 +46,12 @@ function displayTextStats(){
     
     //Finally we work out the accuracy of the user
     var totalMisses = JSON.parse(localStorage.getItem("totalMisses"));
-    var accuracy = 100 - (totalMisses / (totalGames*50));
+    var accuracy = (100 - (totalMisses / (totalGames*50))).toFixed(2);
     //now we display the accuracy
     var $accuracy = $('<p class = "statText">' + accuracy + '%' +'</p>');
     $accuracy.appendTo('#textData3');
     
-    var progression = ((averageScore/10000)*50 + (accuracy/100)*50)
+    var progression = (averageScore/10000)*50 + (accuracy/100)*50);
     //Before we end, we need to create the hunter-o-meter bar
     var $innerMeter = $('<div id = "innerMeter" style = "width:'+ progression +'%;"></div>');
     $innerMeter.appendTo('#outerMeter');
