@@ -8,12 +8,10 @@ a{
 #heading{
     text-align: center;
     font-family: monospace;
-    font-size: 50px;
+    font-size: 500%;
 }
 #header{
     display: block; 
-    margin-top: 1%;
-    margin-left: auto;
 }
 #logo{
     display: block; 
@@ -28,11 +26,10 @@ a{
 .main{
     
     display: block;
-    margin-top: 10%; 
     margin: auto;
-    width:   200px;
-    height: 60px;
-    font-size: 50px;
+    width:   20%;
+    height: 50%;
+    font-size: 400%;
     font-family: monospace;
     text-align: center;
     border-width: 5px;
@@ -42,21 +39,13 @@ a{
     border-radius: 50px;
     
 }
-#buttonBox{
-    display:block;
-    margin-top: 50000px;
-    margin: auto;
-    width: 700px;
-    height: 100px;
-    
-}
+
 .buttons{
-    display: inline-block;
+    display: block;
     margin: auto;
-    margin-left: 15px;
-    width:  205px;
-    height: 40px;
-    font-size: 30px;
+    margin-top: 1%;
+    width:  15%;
+    font-size: 200%;
     font-family: monospace;
     text-align: center;
     border-width: 5px;

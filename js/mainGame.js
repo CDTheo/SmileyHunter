@@ -67,7 +67,7 @@ var generateFour = function(){
     if(n == happyPos){
             happyFaceNo = Math.floor(Math.random()*52+1); 
         //after getting the number we will get the and append the happy face 
-            var $happyImage = $('<img class = "imagefour" id = "target" src = "../assets/Happy_direct/' + happyFaceNo + '.jpg"/>');
+            var $happyImage = $('<img style = "width: 10%" class = "imagefour" id = "target" src = "../assets/Happy_direct/' + happyFaceNo + '.jpg"/>');
             $happyImage.appendTo('#imageScreen');
         }else{
             var randomNo = Math.floor(Math.random()*55 + 1);

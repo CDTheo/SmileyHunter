@@ -92,9 +92,9 @@ function chartLoad(){
     datasets: [
         {
             label: "My First dataset",
-            fillColor: "rgba(220,220,220,0.2)",
-            strokeColor: "rgba(220,220,220,1)",
-            pointColor: "rgba(220,220,220,1)",
+            fillColor: "rgba(225,69,0,0.2)",
+            strokeColor: "rgba(225,69,0,1)",
+            pointColor: "rgba(220,69,0,1)",
             pointStrokeColor: "#fff",
             pointHighlightFill: "#fff",
             pointHighlightStroke: "rgba(220,220,220,1)",
@@ -102,8 +102,8 @@ function chartLoad(){
         },
         {
             label: "My Second dataset",
-            fillColor: "rgba(151,187,205,0.2)",
-            strokeColor: "rgba(151,187,205,1)",
+            fillColor: "rgba(151,187, 205,0.2)",
+            strokeColor: "rgba(0,186,255,1)",
             pointColor: "rgba(151,187,205,1)",
             pointStrokeColor: "#fff",
             pointHighlightFill: "#fff",
