@@ -1,5 +1,7 @@
 body{
-    background-color: #D6F0B0;
+    background-color: #009933;
+    padding: 0;
+    margin: 0;
 }
 a{
     color: inherit;
@@ -8,7 +10,7 @@ a{
 #heading{
     text-align: center;
     font-family: monospace;
-    font-size: 500%;
+    font-size: 300%;
 }
 
 #buttonBox{
@@ -46,4 +48,28 @@ a{
     border-width: 2px;
     border-color:  #ffd700;
     vertical-align: bottom;
+}
+
+#menuBar{
+    display: block;
+    padding: 0;
+    margin: 0;
+    background-color: #007bff;
+    width: 100%;
+    height: 40px;
+    float:left;
+}
+#backButton{
+    display: inline-block;
+    height: 36px;
+    border-width: 2px; 
+    border-style: solid;
+    border-color: black;
+}
+#backtext{
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    font-family: monospace;
+    font-size: 230%;
 }

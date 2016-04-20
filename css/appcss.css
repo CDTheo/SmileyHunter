@@ -1,5 +1,5 @@
 body{
-    background-color: #D6F0B0;
+    background-color: #009933;
 }
 a{
     color: inherit;
@@ -9,7 +9,7 @@ a{
 #heading{
     text-align: center;
     font-family: monospace;
-    font-size: 400%;
+    font-size: 300%;
 }
 #header{
     display: block; 
@@ -25,18 +25,17 @@ a{
 }
 
 .main{
-    
     display: block;
-    margin-top: 1%;
+    margin-top: 10%;
     margin: auto;
     width:   50%;
     font-size: 400%;
     font-family: monospace;
     text-align: center;
-    border-width: 5px;
+    border-width: 2px;
     border-style: solid; 
-    border-color: #65FFE7;
-    background-color: orange;
+    border-color: black;
+    background-color: #007bff;
     border-radius: 50px;
     
 }
@@ -49,10 +48,10 @@ a{
     font-size: 150%;
     font-family: monospace;
     text-align: center;
-    border-width: 5px;
+    border-width: 2px;
     border-style: solid; 
-    border-color: #65FFE7;
-    background-color: orange;
+    border-color: black;
+    background-color: #007bff;
     border-radius: 50px;
 }
 

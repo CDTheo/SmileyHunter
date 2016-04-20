@@ -1,5 +1,7 @@
 body{
-    background-color: #D6F0B0;
+    background-color: #009933;
+    margin: 0;
+    padding:0;
 }
 
 h1{ 
@@ -58,4 +60,44 @@ h3{
     border-color: #65FFE7;
     background-color: orange;
     border-radius: 50px;
+}
+
+#menuBar{
+    display: block;
+    padding: 0;
+    margin: 0;
+    background-color: #007bff;
+    width: 100%;
+    height: 40px;
+    float:left;
+}
+#backButton{
+    display: inline-block;
+    height: 36px;
+    border-width: 2px; 
+    border-style: solid;
+    border-color: black;
+}
+#backtext{
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    font-family: monospace;
+    font-size: 230%;
+}
+
+#AgainButton{
+    display: inline-block;
+    height: 36px;
+    border-width: 2px; 
+    border-style: solid;
+    border-color: black;
+    float: right;
+}
+#Againtext{
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    font-family: monospace;
+    font-size: 230%;
 }
