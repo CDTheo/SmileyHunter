@@ -18,7 +18,7 @@ h3{
     display: inline-block;
    width: 40%
    height: auto; 
-    margin-left: 21%;
+    margin-left: 25%;
 }
 #DateC{
     display: inline-block;
@@ -36,7 +36,7 @@ h3{
 .scoreText{
     text-align: center;
     font-family: monospace;
-    font-size: 200%;
+    font-size: 150%;
 }
 
 #buttonBox{

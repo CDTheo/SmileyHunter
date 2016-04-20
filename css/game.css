@@ -3,8 +3,8 @@ body{
 }
 #scoreDisplay{
     display: inline-block;
-    margin-left: 20%;
-    font-size:200%;
+    margin-left: 10%;
+    font-size:150%;
     font-family: monospace;
     width: 25%;
 }
@@ -13,7 +13,7 @@ body{
     margin-top: 5%;
     margin-right: 20%;
     float: right;
-    font-size: 2em;
+    font-size: 150%;
     font-family: monospace;
 }
 #buttonBox{
