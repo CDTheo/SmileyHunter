@@ -84,7 +84,7 @@ a{
 #outerMeter{
     display: block; 
     margin: auto;
-    width: 100%; 
+    width: 90%; 
     height: 5%;
     border-Width: 1%;
     border-style: solid;
@@ -133,14 +133,14 @@ a{
 
 .chartHeading{
     display: inline-block;
-    font-size: 30%;
-    float:left
+    font-size: 60%;
+    font-family: monospace;
 }
 #chartHpart1{
-    color: ff4500;
+    color: black;
 }
 #chartHpart2{
-    color:00baff;
+    color: black;
 }
 
 #myChart{
@@ -171,4 +171,17 @@ a{
     text-align: center;
     font-family: monospace;
     font-size: 230%;
+}
+
+#playF{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: ff4500;
+}
+#avgS{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: 00baff;
 }

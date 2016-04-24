@@ -91,7 +91,7 @@ function chartLoad(){
     labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
     datasets: [
         {
-            label: "My First dataset",
+            label: "No. Games",
             fillColor: "rgba(225,69,0,0.2)",
             strokeColor: "rgba(225,69,0,1)",
             pointColor: "rgba(220,69,0,1)",
@@ -101,7 +101,7 @@ function chartLoad(){
             data: [monthCountArray[0],monthCountArray[1],monthCountArray[2],monthCountArray[3],monthCountArray[4],monthCountArray[5],monthCountArray[6],monthCountArray[7],monthCountArray[8],monthCountArray[9],monthCountArray[10],monthCountArray[11]]
         },
         {
-            label: "My Second dataset",
+            label: "Average Score",
             fillColor: "rgba(151,187, 205,0.2)",
             strokeColor: "rgba(0,186,255,1)",
             pointColor: "rgba(151,187,205,1)",
@@ -114,5 +114,4 @@ function chartLoad(){
     };
     var options = {};
     var myLineChart = new Chart(ctx).Line(data,options);
-    
 }
