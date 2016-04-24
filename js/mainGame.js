@@ -167,9 +167,9 @@ function updateArrays(){
                 break;
             }  
             newTopTen.push(topTen[n]);
-            if((newTopTen.length < 10)&&(newScorePushed === false)){
-                newTopTen.push(newScore);
             }
+            if((newTopTen.length < 10)&&(newScorePushed === false)){
+            newTopTen.push(newScore);
         }
         scores.push(newScore);
         localStorage.setItem("highScoreArray", JSON.stringify(newTopTen));
