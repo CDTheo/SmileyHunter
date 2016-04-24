@@ -12,13 +12,13 @@ a{
 #heading{
     text-align: center;
     font-family: monospace;
-    font-size:250%;
+    font-size:200%;
 }
 
 .subheading{
     text-align: center;
     font-family: monospace;
-    font-size: 200%;
+    font-size: `100%;
 }
 
 #chart{

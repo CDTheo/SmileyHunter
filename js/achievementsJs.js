@@ -51,7 +51,7 @@ function displayTextStats(){
     var $accuracy = $('<p class = "statText">' + accuracy + '%' +'</p>');
     $accuracy.appendTo('#textData3');
     
-    var progression = ((averageScore/1000)*50 + (accuracy/100)*50);
+    var progression = ((averageScore/2000)*50 + (accuracy/100)*50);
     //Before we end, we need to create the hunter-o-meter bar
     var $innerMeter = $('<div id = "innerMeter" style = "width:'+ progression +'%;"></div>');
     $innerMeter.appendTo('#outerMeter');
