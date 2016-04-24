@@ -35,7 +35,7 @@ function displayTextStats(){
     $avgScore.appendTo('#textData1');
 
     //next we will use the compiled information to find the total game time
-    var gameTimeSec = ((totalGames * 10000) - totalScore)/10;
+    var gameTimeSec = ((totalGames * 2000) - totalScore);
     //then we convert to minutes
     var gameTimeMin = Math.floor(gameTimeSec/60); 
     //Then we find out the remaining number of seconds 
@@ -51,7 +51,7 @@ function displayTextStats(){
     var $accuracy = $('<p class = "statText">' + accuracy + '%' +'</p>');
     $accuracy.appendTo('#textData3');
     
-    var progression = ((averageScore/10000)*50 + (accuracy/100)*50);
+    var progression = ((averageScore/1000)*50 + (accuracy/100)*50);
     //Before we end, we need to create the hunter-o-meter bar
     var $innerMeter = $('<div id = "innerMeter" style = "width:'+ progression +'%;"></div>');
     $innerMeter.appendTo('#outerMeter');
@@ -82,7 +82,7 @@ function chartLoad(){
     for(var n = 0; n<avgScoreArray.length; n++){
         if(avgScoreArray[n] > 0){
             avgScoreArray[n] = Math.floor(avgScoreArray[n] / monthCountArray[n]);
-            avgScoreArray[n] = (avgScoreArray[n]/1000).toFixed(2);
+            avgScoreArray[n] = (avgScoreArray[n]/100).toFixed(2);
         }
     }
     

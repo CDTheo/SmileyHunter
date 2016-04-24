@@ -5,10 +5,10 @@ var happyFaceNo;
 //Variable to keep count of the current number of rounds the user has played 
 var roundCount = 1; 
 //Sets the maximum number of rounds per game.
-var maxRound = 10; 
+var maxRound = 20; 
 //Timer will always begin at 1000 and reduce by 10 every second. 
 //setting inital timer value 
-var count = 1000; 
+var count = 100; 
 //In the next line, setInteral will be triggered. setInterval is a function that take 2 arguments, one function and a integer that represents the milliseconds for the interval period. Every interval period, the function in the arguement will be called.
 var counter = setInterval(timer, 1000);
 //varaible to hold the score with the inital value of 0
@@ -55,7 +55,7 @@ $(document).ready(function(){
                     window.location.href = "highScore.html";
             }else if(event.target.id === "nonTarget"){
                 missCount++;
-                count = count - 100;
+                count = count - 10;
             }
     });
 });
@@ -98,13 +98,13 @@ var generate16 = function(){
 //triggeringTimer function code
 function trigTimer(){
     clearInterval(counter);
-    count = 1010; 
+    count = 101; 
     counter = setInterval(timer, 1000);
 }
 //Now we decalre the function that will simulate the count down
 function timer(){
     //reduce the count by 10 
-    count = count - 10;
+    count = count - 1;
     //update the div in the html document with the new count
     document.getElementById('timeDisplay').innerHTML = count;
     //if the count reaches 0 then clear the interval to prevent it going into negatives.
